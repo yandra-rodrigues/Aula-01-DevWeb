@@ -1,79 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cadastro</title>
+  <link rel="stylesheet" href="StyleFormulárioContatoCompleto.css">
+<title>Formulário de Contato</title>
 <link rel="stylesheet" href="style.css">
-<!--formulário usando css para estilizar-->
-<style>
-    body {
-  font-family: Arial;
-  background-color: #faddf4;
-}
-
-.container {
-  width: 400px;
-  background-color: rgb(254, 177, 230);
-  padding: 20px;
-  margin: auto;
-  margin-top: 80px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgb(237, 66, 191);
-}
-
-h2 {
-  text-align: center;
-}
-
-input, select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-button {
-  width: 100%;
-  padding: 12px;
-  background-color: rgb(81, 3, 80);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: rgb(243, 33, 106);
-}
-</style>
+<!--Atividade Aula 05 - fomrulário usando css externo-->
 </head>
 
 <body>
 
 <div class="container">
 
-<h2>Cadastro de aluno</h2>
+<h2>Formulário de Contato</h2>
 
 <form>
 
-<label>Nome</label>
+<label>Nome do Usuário</label>
 <input type="text" required>
 
-<label>Email</label>
-<input type="email" required>
-
-<label>Telefone</label>
-<input type="tel" required>
-
-<label>Curso</label>
+<label>Assunto:</label>
 <select>
-<option>HTML</option>
-<option>CSS</option>
-<option>JavaScript</option>
-<option>PHP</option>
+<option>Sugestão</option>
+<option>Dúvida</option>
+<option>Reclamação</option>
 </select>
 
-<button type="submit">Cadastrar</button>
+<label for="msg">Mensagem:</label><br>
+<textarea id="msg" name="msg"></textarea><br><br>
+
+
+<button type="submit">Enviar</button>
 
 </form>
 
